@@ -1,5 +1,8 @@
 require 'sinatra'
 
+set :bind, 0.0.0.0
+set :port, 80
+
 $nbits      = rand(0..1)
 $start_time = Time.now.to_i
 $interval   = 60

@@ -27,8 +27,8 @@ The counter is reset to either 0 or 1, with equal probability, once per minute.
 client
 ------
 I have the app running live on AWS.  
-You can play at this URL in your browser: ec2.foo.bar  
-Or like this at the command line: `curl --data "input=1&bet=1" ec2.foo.bar`
+You can play at this URL in your browser: http://ec2-54-221-1-103.compute-1.amazonaws.com/
+Or like this at the command line: `curl --data "input=1&bet=1" http://ec2-54-221-1-103.compute-1.amazonaws.com/`
 
 implementation details
 ----------------------
@@ -56,6 +56,7 @@ security
 I don't know much about security, but I want to learn.
 So I encourage you to break my website and tell me how you did it,
 so that I can fix it and learn not to do whatever I did wrong again.
+My current deployment setup is a bit sorry; I could use advice here.
 
 TODOs
 =====
@@ -63,8 +64,9 @@ TODOs
 in the specified interval receive their responses simultaneously,
 instead of on a rolling bases. This is my top priority.
 2. Make the browser client pretty.
-3. Optional matchmaking w/ win-loss records. This requires a notion of identity.
-4. Introduce anonymous chat so that players can strategize
-and help or harm each other. This is ambitious.
+3. Optional matchmaking w/ win-loss records. This requires a notion of identity;
+currently there is no option except to be anonymous.
+If this feature is implemented, the choice to be anonymous must remain.
+4. Chat so that players can strategize and try to help or harm each other.
 
-I am a Ruby newbie. Come and commit!
+Come and commit!
