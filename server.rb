@@ -1,6 +1,6 @@
 require 'sinatra'
 
-set :bind, 0.0.0.0
+set :bind, '0.0.0.0'
 set :port, 80
 
 $nbits      = rand(0..1)
