@@ -11,8 +11,13 @@
 - vagrant and AWS are sweet but my current deployment kind of sucks
 
 # let's play
-- it's running live on AWS (see README on the github page for link)
-- you can also play from the command line with curl
+- [it's running live on AWS, hosted here because I'm cheap and/or lazy](http://ec2-54-221-1-103.compute-1.amazonaws.com/)
+
+- you can also play from the command line with curl:  
+curl --data "input=1&bet=1" http://ec2-54-221-1-103.compute-1.amazonaws.com/
+
+# a quick look at the code
+[here](https://github.com/nabilhassein/xor-game/blob/master/server.rb)
 
 # TODOs
 - keep connections open and respond to all n players simultaneously  
@@ -20,10 +25,12 @@
 - optional persistent identity for matchmaking, records  
 - chat so players can strategize and try to help or harm each other  
 - better deployment and security; please break it and tell me what's what
+- get a domain name
 
 Come and commit!
 
 # thanks for listening
+github.com/nabilhassein/xor-game
+
 email:   nabil.hassein@gmail.com  
 twitter: @NabilHassein  
-github:  nabilhassein/xor-game
